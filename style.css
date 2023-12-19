@@ -1,0 +1,399 @@
+
+body{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(158 181 189);
+}
+
+
+
+/* Navegation Bar*/
+.navBar{
+    border-bottom: solid 2px #2649e2;
+    width: 100%; 
+    margin: auto; 
+    display: flex;
+    background-color: #eeeeee;
+}
+.navBar ul{
+    justify-content: space-between;
+    display: flex;
+}
+.navBar ul li{
+    border-radius: 190px;
+    list-style: none;
+    padding: 15px;
+}
+.navBar ul li a{
+    font-weight: 500;
+    border: 3px solid transparent;
+    color: #2649e2;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navBar ul li:hover{
+
+    background-color: #dbdbdb;
+}
+
+/*Presentation*/
+
+.blurry-background {
+    background: url(/slide6.jpg) top/cover fixed; 
+    width: 100%;
+    height: 90vh;
+    filter: blur(2px); 
+    z-index: -1; 
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3em;
+    margin: 0;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+
+/* Properties Home*/
+
+.container {
+    padding: 30px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.02fr 0.02fr 0.02fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      ". . ."
+      "casaLago casaModerna apartementoLujo"
+      ". . ."; 
+  }
+  .container img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-bottom: #10278f 2px solid;
+  }
+  .casaLago{
+    width: 95.5%; 
+    box-sizing: border-box;
+    border: 2px solid #10278f;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(209, 209, 209);
+
+  }
+  .casaModerna{
+    
+    width: 95.5%; 
+    box-sizing: border-box;
+    border: 2px solid #10278f;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(209, 209, 209);
+  }
+  .apartamentoLujo{
+    width: 95.5%; 
+    box-sizing: border-box;
+    border: 2px solid #10278f;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(209, 209, 209);
+  }
+
+  .infoIcons{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+     }
+.buttonPropiedades{
+    background-color: #2649e2;
+    border: solid transparent;
+    size: 100px;
+    padding: 15px;
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center; 
+    display: block; 
+    margin: 0 auto;
+}
+.buttonPropiedades:hover{
+    transition: background-color 0.4s ease;
+    background-color: #0f206e;
+}
+.valor{
+    padding: 20px;
+    font-weight: 500;
+}
+
+.buttonMore{
+    background-color: #2a489b; 
+    border: solid 0px transparent;
+    size: 100px;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    display: block; 
+    margin: 0 auto;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-bottom-width: 0px;
+    margin-bottom: 40px;
+    padding-top: 15px;
+
+}
+.buttonMore:hover{
+    background-color: #152f75;
+    transition: background-color 0.4s ease;
+}
+
+/* Contact Form */
+
+.contactForm {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 50%;
+    border-radius: 5px;
+    background-color: #10278f;
+    display: flex;
+    margin: 0 auto;
+}
+  input {
+    border: #265073 0.15rem solid; 
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    float: left;
+  }
+  
+textarea{
+    font-family: "Montserrat", sans-serif;
+    width: 100%; 
+    border: #265073 0.15rem solid;
+    height: 300px;
+    padding: 10px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    font-weight: 500;
+    resize: none;
+  }
+  
+
+  input[type="submit"]{
+    color: #ffffff;
+    background-color: #2649e2;
+    border: transparent;
+  }
+
+  input[type="submit"]:hover{
+    background-color: #265073;
+    transition: background-color 0.5s ease;
+}
+
+input[type="text"] {
+    resize: vertical;
+    overflow: auto; 
+}
+
+/*Services Section*/
+
+
+#serviceSect{
+    color: #ffffff;
+    background-color: #0e28a0 ;
+    border-radius: 200px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;  
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#serviceSect h2{
+    display: inline;
+    border-bottom: #ffffff 3px solid;
+}
+
+#serviceSect p{
+    font-size: 23px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 190px ;
+    padding-left: 190px;
+    font-weight: 500;
+}
+
+#propSales {
+    margin-left: 20px;
+    color: #ffff;
+    background-color: #172f978c;
+    border-radius: 50px;
+    margin: 0 100px;
+    font-size: 20px;
+    margin-top: 50px;
+    width: 60%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.192);
+    display: flex;
+}
+
+#propSales img {
+    border-right: #2649e2 solid 3px;
+    border-radius: 50px;
+    width: 300px;
+    height: 300px;
+    -webkit-box-shadow: -7px 2px 9px 0px #000000; 
+    box-shadow: -7px 2px 9px 0px #000000;}
+
+.textContainer {
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.textContainer h4 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#propSales p {
+    text-align: center;
+    max-width: 90%; 
+    margin: 0 auto; 
+}
+
+#propRent{
+    margin-left: 20px;
+    color: #fff;
+    background-color: #172f978c;
+    border-radius: 50px;
+    margin: 10px 300px;
+    font-size: 20px;
+    margin-top: 50px;
+    width: 60%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.192);
+    display: flex;
+}
+
+#propRent img{
+    border-right: #2649e2 solid 3px;
+    border-radius: 50px;
+    width: 300px;
+    height: 300px;
+    -webkit-box-shadow: -7px 2px 9px 0px #000000; 
+    box-shadow: -7px 2px 9px 0px #000000;
+}
+#propRent p{
+    text-align: center;
+    max-width: 90%; 
+    margin: 0 auto; 
+}
+
+
+
+#customSearch{
+    margin-left: 20px;
+    color: #fff;
+    background-color: #172f978c;
+    border-radius: 50px;
+    margin: 10px 100px;
+    font-size: 20px;
+    margin-top: 50px;
+    width: 60%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.192);
+    display: flex;
+}
+
+#customSearch img{
+    border-right: #2649e2 solid 3px;
+    border-radius: 50px;
+    width: 300px;
+    height: 300px;
+    -webkit-box-shadow: -7px 2px 9px 0px #000000; 
+    box-shadow: -7px 2px 9px 0px #000000;
+}
+    #customSearch p {
+        text-align: center;
+        max-width: 90%; 
+        margin: 0 auto; 
+    }
+
+
+
+#devProjects{
+    margin-left: 20px;
+    color: #fff;
+    background-color: #172f978c;
+    border-radius: 50px;
+    margin: 10px 300px;
+    font-size: 20px;
+    margin-top: 50px;
+    width: 60%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.192);
+    display: flex;
+}
+
+#devProjects img{
+    border-right: #2649e2 solid 3px;
+    border-radius: 50px;
+    width: 300px;
+    height: 300px;
+    -webkit-box-shadow: -7px 2px 9px 0px #000000; 
+    box-shadow: -7px 2px 9px 0px #000000;
+}
+
+#devProjects p{
+    text-align: center;
+    max-width: 90%; 
+    margin: 0 auto; 
+}
+
+
+/* Footer */
+
+footer{
+    margin-top: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    background-color: #6d7092;
+    color: #ffffff;
+    height: 4rem;
+    width: 100%;
+    color: #ffffff;
+    font-weight: 600;
+
+}
+.centeredText{
+    margin: 0;
+    padding-top: 1.5rem;
+}
+
